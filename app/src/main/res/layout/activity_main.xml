@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E37777"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textColor="#EC0303"
+        android:textSize="52dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imgDado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79"
+        tools:text="1" />
+
+    <Button
+        android:id="@+id/btnLanzar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/system_error_dark"
+        android:backgroundTint="#F44336"
+        android:fontFamily="serif-monospace"
+        android:shadowColor="@android:color/system_error_dark"
+        android:stateListAnimator="@android:anim/slide_out_right"
+        android:text="LANZAR DADO"
+        android:textColor="@color/black"
+        android:textColorLink="@android:color/system_error_dark"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgDado"
+        app:rippleColor="@android:color/system_error_dark" />
+
+    <ImageView
+        android:id="@+id/imgDado"
+        android:layout_width="135dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/dado1"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="265dp"
+        tools:srcCompat="@drawable/dado1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
